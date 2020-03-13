@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <table class="table">
+        <tbody>
+            {% for interview in interviews %}
+              <tr>
+                <td>{{ interview.participant.name }}</td>
+                <td>{{ interview.date_Start }}</td>
+                <td>{{ interview.date_End }}</td>
+              <td><button id='btnu' type="submit" ><a href="http://127.0.0.1:8000/editing/{{interview.count}}" >Edit</a></button></td>
+                
+              </tr>
+            {% endfor %}
+            
+          </tbody>
+    </table>
+    <button id='button' type="submit" ><a href="http://127.0.0.1:8000/" >ADD</a></button>
+    {% endblock %}
+ 

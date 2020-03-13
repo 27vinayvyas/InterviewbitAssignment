@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <form method="POST">
+    {% csrf_token %}
+        {{form.as_p}}
+        {% if flag == 1 %}
+            <script>alert("There is a Clash. Please choose another Date")</script>  
+        {% elif flag == 2 %}
+            <script>alert("Starting Date cannot be greater or Equal to end Date. Please choose another Date")</script>
+        {% endif %}
+
+        <input type="submit" value="save"/>
+        <button id='btnu' type="submit" ><a href="http://127.0.0.1:8000/upcoming/" >ALL</a></button>
+    </form>
+    {% endblock %}
+ 
