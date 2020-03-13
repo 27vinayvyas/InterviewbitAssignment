@@ -3,7 +3,7 @@ Steps to get the webapp worrking:-
 virtualenv venv                                                                                                                 
 source venv/bin/activate                                                                                                       
 pip install django                                                                                                             
-cd myproject                                                                                                                   
+cd myproject  (extract the cloned folder in a directory called myproject)                                                                                                        
 python manage.py runserver                                                                                                     
                                                                                                                                
                                                                                                                                
