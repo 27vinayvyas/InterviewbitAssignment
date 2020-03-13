@@ -1,11 +1,11 @@
 Steps to get the webapp worrking:-
 
 
-virtualenv venv
-source venv/bin/activate
-pip install django
-cd myproject
-python manage.py runserver
+virtualenv venv                                                                                                                 
+source venv/bin/activate                                                                                                       
+pip install django                                                                                                             
+cd myproject                                                                                                                   
+python manage.py runserver                                                                                                     
 
 
 Move to the link that appear in the terminal ( 127.0.0.1:8000 ). Its the first page, the page where you can schedule an interview, selecting a participant from the already present participants (participant model is created and some dummy values are added by me) and selecting the start and end date.
